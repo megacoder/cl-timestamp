@@ -1,0 +1,6 @@
+* Thu Dec 21 2023 Tommy Reynolds
+- (ecff176) Separate file for awk(1) syntax coloring. (HEAD -> devel)
+
+* Tue Sep 21 2010 Tommy Reynolds
+- (ddb3888) Converted to git (tag: v1.0.0, origin/master, origin/HEAD, master)
+
