@@ -1,10 +1,11 @@
-BINDIR	=${HOME}/bin
+PREFIX=/opt
+BINDIR	=${PREFIX}/bin
 
-all:	cl-timestamp.zsh
+all:	cl-timestamp.zsh cl-timestamp.awk
 
-install: cl-timestamp.zsh
-	install -d ${BINDIR}
-	install -c cl-timestamp.zsh ${BINDIR}/cl-timestamp
+install: cl-timestamp.zsh cl-timestamp.awk
+	install -D cl-timestamp.zsh ${BINDIR}/cl-timestamp
+	install -D cl-timestamp.awk ${BINDIR}/cl-timestamp.awk
 
 uninstall:
-	${RM} ${BINDIR}/cl-timestamp
+	${RM} ${BINDIR}/cl-timestamp ${BINDIR}/cl-timestamp.awk
